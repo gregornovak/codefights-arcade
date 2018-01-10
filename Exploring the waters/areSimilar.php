@@ -18,7 +18,9 @@ function areSimilar($a, $b) {
         }
     }
     
-    if(count($mismatches) === 0) return true;
+    if(count($mismatches) === 0) {
+        return true;
+    }
     
     if(count($mismatches) === 2) {
         $i = $mismatches[0];
